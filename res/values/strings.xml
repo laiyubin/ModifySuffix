@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ModifySuffix</string>
+    <string name="choose_folder">选择文件夹</string>
+    <string name="tips">请勾选要修改的文件类型</string>
+    <string name="alter">更改</string>
+    <string name="retrieve">还原</string>
+    <string name="confirm">确定</string>
+    <string name="toParent">返回上一层</string>
+</resources>
