@@ -9,6 +9,8 @@ import android.widget.*;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -68,6 +70,7 @@ public class FolderChooser extends Activity {
                 finish();
             }
         });
+
     }
 
     private void initViews() {
@@ -89,6 +92,8 @@ public class FolderChooser extends Activity {
                 folders.add(f.getName());
             }
         }
+
+        Collections.sort(folders,new MyComp());
     }
 
     public void toParentFolder() {
@@ -97,4 +102,12 @@ public class FolderChooser extends Activity {
     }
 
 
+}
+
+class MyComp implements Comparator<String>{
+
+    @Override
+    public int compare(String s, String s2) {
+        return s.compareTo(s2);
+    }
 }

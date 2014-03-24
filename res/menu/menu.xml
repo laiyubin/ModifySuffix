@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
- <item android:id="@+id/suffixDefine" android:icon="@drawable/config">Config</item>
+ <item android:id="@+id/suffixDefine" android:icon="@drawable/config" android:title="Configuration">Config</item>
 </menu>
